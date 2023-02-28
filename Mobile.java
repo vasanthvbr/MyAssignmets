@@ -1,22 +1,39 @@
-package week1.day1;
+package week2.day2;
 
 public class Mobile {
 
-	String mobileBrandName="oppo";
-	char mobileLogo = 'o';
-	short noOfMobilePiece = 20;
-	int modeNumber = 9951235;
-	long mobileImeiNumber = 753963456;
-	float mobilePrice = 29999.99F;
-	boolean isDamaged = false;
-	public static void main(String[] arg)
-	{
-		Mobile mob=new Mobile();
-		System.out.println(mob.mobileBrandName);
-		System.out.println("Mobile logo ="+mob.mobileLogo);
-		System.out.println("no.of mobile piece"+" = "+mob.noOfMobilePiece);
-		System.out.println("Mobile IMEI number "+" ="+mob.mobileImeiNumber);
-		System.out.println("Mobile price "+" = "+mob.mobilePrice);
-		System.out.println("Damage "+" ="+mob.isDamaged);
-	}
-}
+	    public void switchOnMobile(){
+	        System.out.println("Switch on the mobile");
+	    }
+	    public void plugInCharger(){
+	        System.out.println("Plug in the charger");
+	    }
+	    public void unLockMobile(){
+	        System.out.println("Unlock mobile");
+	    }
+	    public void insertSimCard(){
+	        System.out.println("Insert sim card ");
+	    }
+	    public void logIn(){
+	        System.out.println("Login using Gmail ID");
+	    }
+	    public void sync(){
+	        System.out.println("Sync device");
+	    }
+	    public void call(){
+	    	
+	    	System.out.println("Call");
+	    }
+
+	    public static void main(String[] args) {
+	        Mobile myphn = new Mobile();
+	        myphn.logIn();
+	        myphn.switchOnMobile();
+	        myphn.plugInCharger();
+	        myphn.unLockMobile();
+	        myphn.insertSimCard();
+	        myphn.sync();
+	        myphn.call();
+	    }
+	}	
+
